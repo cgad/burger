@@ -1,0 +1,1 @@
+insert into burgers (name) values (veggie avocado burger), (bacon & bleu burger);
