@@ -32,7 +32,9 @@ var burger = {
         });
     },
     updateOne: function(col, val, condition, cb) {
-        cb(res);
+        orm.updateOne("cats", col, val, condition, function(res) {
+            cb(res);
+        });
     }
 };
 
