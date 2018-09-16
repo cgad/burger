@@ -1,0 +1,32 @@
+<img src="assets/img/burger.jpeg"/>
+
+<h2>Eat-Da-Burger!</h2>
+
+<div class="container">
+    <div class="row">
+        <div class="col-2"></div>
+        <div class="col-4">
+            {{#each burgers}}
+                {{#unless eaten}}
+                    <p>{{name}}</p>
+                {{/unless}}
+            {{/each}}
+        </div>
+        <div class="col-4">
+            {{#each burgers}}
+                {{#if eaten}}
+                    <p>{{name}}</p>
+                {{/if}}
+            {{/each}}
+        </div>
+        <div class="col-2"></div>
+    </div>
+</div>
+
+<h5>Add a Burger</h5>
+
+<form>
+    <textarea type="text" id="newBurger" name="new-burger"></textarea>
+    {{!-- <p><button type="submit" action="/api/burgers" method="post" class="btn btn-warning">Submit</button></p> --}}
+    <p><button type="submit">Submit</button></p>
+</form>

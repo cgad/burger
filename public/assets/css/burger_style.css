@@ -1,0 +1,26 @@
+body {
+    margin: 20px;
+    text-align: center;
+    background-color: rgba(212, 61, 41, 0.966);
+}
+
+img {
+    height: 100px;
+    margin: 10px;
+}
+
+textarea {
+    margin: 10px;
+    width: 30%;
+}
+
+/* .btn-warning, .btn-warning:hover {
+    background-color: #fadd92;
+    border-color: #fadd92;
+} */
+
+button {
+    background-color: #fadd92;
+    border-color: #fadd92;
+    border-radius: 5px;
+}
