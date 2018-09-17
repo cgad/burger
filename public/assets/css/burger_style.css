@@ -9,18 +9,27 @@ img {
     margin: 10px;
 }
 
-textarea {
-    margin: 10px;
-    width: 30%;
+.burgerBox {
+    background: white;
+    margin: 30px 10px;
+    padding: 5px 10px;
 }
 
-/* .btn-warning, .btn-warning:hover {
-    background-color: #fadd92;
-    border-color: #fadd92;
-} */
+p {
+    margin-bottom: 5px;
+}
+
+.burger {
+    text-align: left;
+}
+
+textarea {
+    width: 30%;
+}
 
 button {
     background-color: #fadd92;
     border-color: #fadd92;
     border-radius: 5px;
+    margin-top: 5px;
 }
