@@ -9,6 +9,15 @@ img {
     margin: 10px;
 }
 
+container {
+    margin: 0 auto;
+}
+
+#row {
+    width: 100%;
+    margin: 0;
+}
+
 .burgerBox {
     background: white;
     margin: 30px 10px;

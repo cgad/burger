@@ -3,25 +3,21 @@
 <h2>Eat-Da-Burger!</h2>
 
 <div class="container">
-    <div class="row">
+    <div class="row" id="row">
         <div class="col-3"></div>
         <div class="col-3 burgerBox">
-            {{!-- <ul> --}}
-                {{#each burgers}}
-                    {{#unless eaten}}
-                        {{> burgers/burger-block eaten=true }}
-                    {{/unless}}
-                {{/each}}
-            {{!-- </ul> --}}
+            {{#each burgers}}
+                {{#unless eaten}}
+                    {{> burgers/burger-block eaten=true }}
+                {{/unless}}
+            {{/each}}
         </div>
         <div class="col-3 burgerBox">
-            {{!-- <ul> --}}
-                {{#each burgers}}
-                    {{#if eaten}}
-                        {{> burgers/burger-block eaten=false }}
-                    {{/if}}
-                {{/each}}
-            {{!-- </ul> --}}
+            {{#each burgers}}
+                {{#if eaten}}
+                    {{> burgers/burger-block eaten=false }}
+                {{/if}}
+            {{/each}}
         </div>
         <div class="col-3"></div>
     </div>

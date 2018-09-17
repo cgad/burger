@@ -49,8 +49,8 @@ var orm = {
     },
     // condition = "id = ...";
     // update burgers set eaten = true where id = ...;
-    updateOne: function(table, col, val, condition, cb) {
-        var queryString = "update " + table + " set " + col + " = " + val + " where " + condition;
+    updateOne: function(table, col, val, id, cb) {
+        var queryString = "update " + table + " set " + col + " = " + val + " where id = " + id;
         console.log(queryString);
         connection.query(queryString, function(err, result) {
             if (err) throw err;
